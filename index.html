@@ -3,6 +3,9 @@
 
       <head>
             <title>PicPic</title>
+            <script>
+                  window.img_paths={"name":"assets","type":"directory","size":"2.56MB","children":[{"name":"bird-763769_1920.jpg","type":"file","extension":"jpg","size":"680KB","dimension":"1920x1285","path":"bird-763769_1920.jpg"},{"name":"birds-5791396_1920.jpg","type":"file","extension":"jpg","size":"811.16KB","dimension":"1920x1280","path":"birds-5791396_1920.jpg"},{"name":"cat-5778777_1920.jpg","type":"file","extension":"jpg","size":"580.72KB","dimension":"1920x1280","path":"cat-5778777_1920.jpg"},{"name":"zebra-5651454_1920.jpg","type":"file","extension":"jpg","size":"484.43KB","dimension":"1920x1223","path":"zebra-5651454_1920.jpg"}]}
+            </script>
       </head>
 
       <script src='./libs/js/include.js'></script>
@@ -17,7 +20,16 @@
             content="width=device-width, initial-scale=1, maximum-scale=1"
       >
 
-      <style></style>
+      <style>
+            @import './components/Detail/index.css';
+@import './components/Empty/index.css';
+@import './components/FolderSelect/index.css';
+@import './components/Header/index.css';
+@import './components/ImgItems/index.css';
+@import './components/Msg/index.css';
+@import './components/Pagination/index.css';
+
+      </style>
 
       <style>
             @import './libs/css/atom.min.css';
@@ -52,7 +64,14 @@
                   <x-msg></x-msg>
                   <x-folder-select></x-folder-select>
 
-                  <template-slot></template-slot>
+                  <include src="./components/Detail/index.html"></include>
+<include src="./components/Empty/index.html"></include>
+<include src="./components/FolderSelect/index.html"></include>
+<include src="./components/Header/index.html"></include>
+<include src="./components/ImgItems/index.html"></include>
+<include src="./components/Msg/index.html"></include>
+<include src="./components/Pagination/index.html"></include>
+
             </div>
       </body>
 
@@ -62,6 +81,13 @@
       <script src='./libs/js/clipboard.js'></script>
       <script src='./index.js'></script>
 
-      <script id="component_scripts"></script>
+      <script src="./components/Detail/index.js"></script>
+<script src="./components/Empty/index.js"></script>
+<script src="./components/FolderSelect/index.js"></script>
+<script src="./components/Header/index.js"></script>
+<script src="./components/ImgItems/index.js"></script>
+<script src="./components/Msg/index.js"></script>
+<script src="./components/Pagination/index.js"></script>
+
 
 </html>
