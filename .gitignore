@@ -1,0 +1,30 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+#dev
+next-env.d.ts
+
+# testing
+/coverage
+
+# production
+/dist
+
+# misc
+.DS_Store
+.env*
+
+# debug
+*-debug.log*
+*-error.log*
+*.zip
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
