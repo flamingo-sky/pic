@@ -10,10 +10,10 @@ next-env.d.ts
 /coverage
 
 # production
-bin
-build
+/bin
+/build
 node_modules
-src
+/src
 .gitignore
 LICENSE
 package.json
