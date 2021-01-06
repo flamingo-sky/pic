@@ -10,8 +10,18 @@ next-env.d.ts
 /coverage
 
 # production
-/dist
-
+bin
+build
+node_modules
+src
+.gitignore
+LICENSE
+package.json
+package-lock.json
+picpic.config.json
+readme.md
+readme_cn.md
+yarn.lock
 # misc
 .DS_Store
 .env*
